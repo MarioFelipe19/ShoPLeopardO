@@ -1,0 +1,128 @@
+html{
+    background-color: black;
+    border: solid 1px yellow;
+}
+@media (max-width: 425px){
+    body{
+        display: grid;
+        grid-template-rows: repeat(1fr , 1);
+        grid-template-columns: repeat(1fr , 1);
+    }
+    /* HEADER */
+    /* ---------------------------------------------------------- */
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        order: 2;
+        
+    }
+    header div{
+        order: 1;
+        text-align: center;
+        
+    }
+    header div img{
+        width: 30vw;
+        border-radius: 10px;
+    }
+    /* NAV */
+    /* ----------------------------------------------------------- */
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3vw;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        background-color: rgb(36, 94, 36);
+        border-radius: 15px;
+        padding:  5vw 0vw 5vw ;
+        text-align: center;
+        margin:  0 10vw 0;
+    }
+    /* MAIN */
+    /* -------------------------------------------------------------- */
+    main{
+        display: grid;
+        grid-template-rows: repeat(1fr , 1);
+        grid-template-columns: repeat(1fr , 1);
+    }
+    main section h2{
+        color: white;
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    }
+    main section+section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: dotted 1px white;
+        gap: 1vw;
+    }
+
+    main section+section div img{
+        width: 55vw;
+        margin: 1vw 0 0 ;
+    }
+
+    main section+section h3{
+        color: white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    main section+section h4{
+        color: black;
+        background-color: yellow;
+
+    }
+    main section+section a{
+        text-decoration: none;
+        color: white;
+        background-color: rgb(36, 94, 36);
+        border-radius: 15px;
+        text-align: center;
+        padding: 2vw 3vw 2vw ;
+        margin: 0 0 1vw ;
+    }
+    main section+section p{
+        display: none;
+    }
+    /* FOOTER */
+    /* --------------------------------------------------------- */
+    footer{
+        color: white;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
